@@ -1,0 +1,177 @@
+﻿#gumb {
+    text-align: left;
+    position: absolute;
+    left: 530px;
+	width: 150px;
+    top: 660px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+  /* sve tablice su definirane vako, to ignoriraš */
+  table, th, td, tr {
+    border: none;
+	/* Jebo Ovo je jako stanjilo granice, ali i dalje postoje neke.
+	Ne smetaju toliko, ali me i dalje jebe otkud su */
+	padding: 0px;
+	margin: 0px;
+}
+
+ /* općenito, ove stvari koje ne počinju s točkom ili hashem su neke globalne stvari da ti sav html izgleda ljepše */
+ img {
+ float:left;
+ }
+ 
+ h2 {
+ text-align:center;
+ font-size:22px;
+ }
+ 
+ h3 {
+ font-size:16px;
+ }
+
+ /* bijelo polje - sva bijela polja definiraš sa div class="poljeBelo", nadam se */
+ .poljeBelo {
+	background-color:#FFF;
+	width: 64px;
+	height: 64px;
+ }
+ 
+ /* crno tj. plavo polje, vidi upute pod belo polje */
+ .poljeCrno {
+	background-color:#082485;
+	width: 64px;
+	height: 64px;
+	}
+ 
+ /* odabrano polje bi bilo idealno da je ofarbano ovako, a kasnije da se vrati u original... Kako to izvesti jebemu? */
+ .poljeOdabrano {
+	background-color:#A33;
+	width: 64px;
+	height: 64px;
+	
+ }
+ 
+ /* ovo je već perverzija, gdje da ti ofarba di se može kliknuti, ali kasnije da ti sve resetira na original. Tako ti bog pomogao ako to probaš implementirati */
+ .poljeOpcije {
+	background-color:#AA3;
+	width: 64px;
+	height: 64px;
+  }
+ 
+ 
+ 
+ /* div za tablicu, da joj se divimo. Idealno tablicu utrpati u div id=divZaTablicu */
+ 
+ #divZaTablicu {
+ width: 530px;
+ height: 530px;
+ float:left;
+ margin: 20px;
+ margin-bottom:5px;
+ }
+ 
+ /* div za upute - ono kaj bi se pojavilo desno od tablice kad klikneš na figuricu ili kartu  */
+ 
+ #divZaUpute {
+  width: 300px;
+  height: 530px;
+  float:left;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 20px;
+  text-align: justify;
+  margin-bottom:5px;
+ }
+
+/* div za karte ispod tablice */
+ 
+ #divZaKarte {
+    position:absolute;
+    left: 50px;
+    top: 550px;
+	float:left;
+	width: 500px;
+	padding: 5px;
+	margin: 20px;
+	margin-top:20px;
+	text-align: left;
+ }
+ 
+ #divZaJednuKartu {
+ }
+
+ #content {
+    position:absolute;
+    top: -40px;
+    left: 550px;
+	width: 200px;
+	height: 620px;
+	float:left;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 20px;
+	margin-top:64px;
+	text-align: left;
+	margin-bottom:5px;
+	}
+    
+#center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+
+#flags {
+    position: fixed;
+    padding: 16px;
+    margin: 16px;
+    top: 60%;
+    left: 50%;
+    margin-left: -60px;
+}
+    
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
